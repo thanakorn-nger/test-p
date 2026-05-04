@@ -242,6 +242,7 @@ if (smoothVibration > threshold && machineRunning) {
 | พิพัฒน์ ลิขิตวานิช  | 1660707728 |
 | ธนกร เงินยวง   | 1660708551  |
 
+**สถานศึกษา:** มหาวิทยาลัยกรุงเทพ
 **ผู้สอน:** อาจารย์ทศพร เวชศิริ  
 **วิชา:** CS423 Internet of Things and Applications  
 **รูปแบบ:** Wokwi Simulator
