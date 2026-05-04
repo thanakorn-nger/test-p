@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "THANAKORN NGERNYUANG",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -19.2, "left": -23.96, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": 61.42, "left": 155.92, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -78.1, "left": -144.2, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 221, "left": -38.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "pot1:SIG", "esp:34", "green", [ "v0" ] ],
+    [ "pot1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "relay1:VCC", "esp:5V", "red", [ "h-19.2", "v-67.2" ] ],
+    [ "relay1:GND", "esp:GND.1", "black", [ "h-38.4", "v-106" ] ],
+    [ "relay1:IN", "esp:25", "green", [ "h-57.6", "v-144.2" ] ],
+    [ "imu1:VCC", "esp:3V3", "green", [ "v-67.2", "h-249.52" ] ],
+    [ "imu1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "imu1:SCL", "esp:22", "green", [ "v0" ] ],
+    [ "imu1:SDA", "esp:21", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
